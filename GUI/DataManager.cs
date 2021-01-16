@@ -47,6 +47,7 @@ namespace excel2json.GUI
         {
             if (mJson != null)
             {
+                filePath = filePath.Substring(0, filePath.LastIndexOf("\\")+1);
                 mJson.SaveToFile(filePath, mEncoding);
             }
         }
